@@ -1,0 +1,50 @@
+[
+  {
+    "ID": 1,
+    "FIRST_NAME": "Aayushman",
+    "LAST_NAME": "Bhore",
+    "MIDDLE_NAME": "Rahul",
+    "ADDRESS": "Nanded City",
+    "CITY": "Pune",
+    "ZIP": "411041",
+    "STATE": "MH",
+    "USERNAME": "aayushmanbh",
+    "PASSWORD": "aayushmanbh",
+    "SCHOOL_ID": 1,
+    "GRADE": "5",
+    "DIVISION": "D",
+    "ROLE": "student"
+  },
+  {
+    "ID": 2,
+    "FIRST_NAME": "Aaradhy",
+    "LAST_NAME": "Bhore",
+    "MIDDLE_NAME": "Rahul",
+    "ADDRESS": "Nanded City",
+    "CITY": "Pune",
+    "ZIP": "411041",
+    "STATE": "MH",
+    "USERNAME": "aaradhybh",
+    "PASSWORD": "aaradhybh",
+    "SCHOOL_ID": 1,
+    "GRADE": "3",
+    "DIVISION": "E",
+    "ROLE": "student"
+  },
+  {
+    "ID": 1,
+    "FIRST_NAME": "Rahul",
+    "LAST_NAME": "Bhore",
+    "MIDDLE_NAME": "Baban",
+    "ADDRESS": "Nanded City",
+    "CITY": "Pune",
+    "ZIP": "411041",
+    "STATE": "MH",
+    "USERNAME": "rahulbh",
+    "PASSWORD": "rahulbh",
+    "SCHOOL_ID": 1,
+    "GRADE": "5",
+    "DIVISION": "D",
+    "ROLE": "Parent"
+  }
+]

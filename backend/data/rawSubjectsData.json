@@ -1,0 +1,512 @@
+ {
+    "Mathematics": {
+      "CBSE": {
+        "Class 1": ["Numbers", "Addition", "Subtraction"],
+        "Class 2": ["Multiplication", "Division", "Fractions"],
+        "Class 3": ["Decimals", "RATIOS", "Proportions"],
+        "Class 4": ["Integers", "Algebra", "Geometry"],
+        "Class 5": ["Mensuration", "Data Handling", "Probability"]
+      },
+      "ICSE": {
+        "Class 1": ["Numbers", "Addition", "Subtraction"],
+        "Class 2": ["Multiplication", "Division", "Fractions"],
+        "Class 3": ["Decimals", "RATIOS", "Proportions"],
+        "Class 4": ["Integers", "Algebra", "Geometry"],
+        "Class 5": ["Mensuration", "Data Handling", "Probability"]
+      },
+      "State Board": {
+        "Class 1": ["Numbers", "Addition", "Subtraction"],
+        "Class 2": ["Multiplication", "Division", "Fractions"],
+        "Class 3": ["Decimals", "RATIOS", "Proportions"],
+        "Class 4": ["Integers", "Algebra", "Geometry"],
+        "Class 5": ["Mensuration", "Data Handling", "Probability"]
+      },
+      "UP Board": {
+        "Class 1": ["संख्याएँ", "जोड़", "घटाव"],
+        "Class 2": ["गुणा", "भाग", "भिन्न"],
+        "Class 3": ["दशमलव", "अनुपात", "प्रतिशत"],
+        "Class 4": ["पूर्णांक", "बीजगणित", "ज्यामिति"],
+        "Class 5": ["मापन", "डेटा हैंडलिंग", "संभावना"]
+      },
+      "MP Board": {
+        "Class 1": ["संख्याएँ", "जोड़", "घटाव"],
+        "Class 2": ["गुणा", "भाग", "भिन्न"],
+        "Class 3": ["दशमलव", "अनुपात", "प्रतिशत"],
+        "Class 4": ["पूर्णांक", "बीजगणित", "ज्यामिति"],
+        "Class 5": ["मापन", "डेटा हैंडलिंग", "संभावना"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["संख्याएँ", "जोड़", "घटाव"],
+        "Class 2": ["गुणा", "भाग", "भिन्न"],
+        "Class 3": ["दशमलव", "अनुपात", "प्रतिशत"],
+        "Class 4": ["पूर्णांक", "बीजगणित", "ज्यामिति"],
+        "Class 5": ["मापन", "डेटा हैंडलिंग", "संभावना"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ಸಂಖ್ಯೆಗಳು", "ಒಟ್ಟು", "ಕಡಿತ"],
+        "Class 2": ["ಗುಣಾಕಾರ", "ಭಾಗಾಕಾರ", "ಭಿನ್ನಗಳು"],
+        "Class 3": ["ದಶಮಲವ", "ಅನുപಾತ", "ಶೇಕಡಾವಾರು"],
+        "Class 4": ["ಪೂರ್ಣಾಂಕಗಳು", "ಬೀಜಗಣಿತ", "ಜ್ಯಾಮಿತಿ"],
+        "Class 5": ["ಮಾಪನ", "ಡೇಟಾ ಹ್ಯಾಂಡ್ಲಿಂಗ್", "ಸಂಭಾವನೆ"]
+      }
+    },
+    "Science": {
+      "CBSE": {
+        "Class 1": ["Living and Non-Living Things", "Plants", "Animals"],
+        "Class 2": ["Human Body", "Food", "Water"],
+        "Class 3": ["Matter", "Force and Work", "Energy"],
+        "Class 4": ["The Earth", "Our Solar System", "Stars and Planets"],
+        "Class 5": ["Famous Scientists", "Inventions", "Scientific Instruments"]
+      },
+      "ICSE": {
+        "Class 1": ["Living and Non-Living Things", "Plants", "Animals"],
+        "Class 2": ["Human Body", "Food", "Water"],
+        "Class 3": ["Matter", "Force and Work", "Energy"],
+        "Class 4": ["The Earth", "Our Solar System", "Stars and Planets"],
+        "Class 5": ["Famous Scientists", "Inventions", "Scientific Instruments"]
+      },
+      "State Board": {
+        "Class 1": ["Living and Non-Living Things", "Plants", "Animals"],
+        "Class 2": ["Human Body", "Food", "Water"],
+        "Class 3": ["Matter", "Force and Work", "Energy"],
+        "Class 4": ["The Earth", "Our Solar System", "Stars and Planets"],
+        "Class 5": ["Famous Scientists", "Inventions", "Scientific Instruments"]
+      },
+      "UP Board": {
+        "Class 1": ["जीवित और निर्जीव चीजें", "पौधे", "जानवर"],
+        "Class 2": ["मानव शरीर", "खाना", "पानी"],
+        "Class 3": ["पदार्थ", "बल और कार्य", "ऊर्जा"],
+        "Class 4": ["पृथ्वी", "हमारा सौर मंडल", "तारे और ग्रह"],
+        "Class 5": ["प्रसिद्ध वैज्ञानिक", "आविष्कार", "वैज्ञानिक उपकरण"]
+      },
+      "MP Board": {
+        "Class 1": ["जीवित और निर्जीव चीजें", "पौधे", "जानवर"],
+        "Class 2": ["मानव शरीर", "खाना", "पानी"],
+        "Class 3": ["पदार्थ", "बल और कार्य", "ऊर्जा"],
+        "Class 4": ["पृथ्वी", "हमारा सौर मंडल", "तारे और ग्रह"],
+        "Class 5": ["प्रसिद्ध वैज्ञानिक", "आविष्कार", "वैज्ञानिक उपकरण"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["जीवित आणि निर्जीव गोष्टी", "वनस्पती", "प्राणी"],
+        "Class 2": ["मानव शरीर", "अन्न", "पाणी"],
+        "Class 3": ["पदार्थ", "बल आणि कार्य", "ऊर्जा"],
+        "Class 4": ["पृथ्वी", "आपला सौर मंडळ", "तारे आणि ग्रह"],
+        "Class 5": ["प्रसिद्ध शास्त्रज्ञ", "आविष्कार", "वैज्ञानिक उपकरणे"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ಜೀವಿತ ಮತ್ತು ನಿರ್ಜೀವ ವಿಷಯಗಳು", "ಸಸ್ಯಗಳು", "ಪ್ರಾಣಿಗಳು"],
+        "Class 2": ["ಮಾನವ ಶರೀರ", "ಆಹಾರ", "ನೀರು"],
+        "Class 3": ["ಪದಾರ್ಥ", "ಬಲ ಮತ್ತು ಕೆಲಸ", "ಶಕ್ತಿ"],
+        "Class 4": ["ಭೂಮಿ", "ನಮ್ಮ ಸೂರ್ಯಮಂಡಲ", "ತಾರೆಗಳು ಮತ್ತು ಗ್ರಹಗಳು"],
+        "Class 5": ["ಪ್ರಸಿದ್ಧ ವಿಜ್ಞಾನಿಗಳು", "ಆವಿಷ್ಕಾರಗಳು", "ವೈಜ್ಞಾನಿಕ ಸಾಧನಗಳು"]
+      }
+    },
+    "English": {
+      "CBSE": {
+        "Class 1": ["Alphabets", "Numbers", "Colors"],
+        "Class 2": ["Animals", "Birds", "Fruits"],
+        "Class 3": ["Vegetables", "Days of the Week", "Months of the Year"],
+        "Class 4": ["Seasons", "Time", "Family"],
+        "Class 5": ["Hobbies", "Professions", "Sports"]
+      },
+      "ICSE": {
+        "Class 1": ["Alphabets", "Numbers", "Colors"],
+        "Class 2": ["Animals", "Birds", "Fruits"],
+        "Class 3": ["Vegetables", "Days of the Week", "Months of the Year"],
+        "Class 4": ["Seasons", "Time", "Family"],
+        "Class 5": ["Hobbies", "Professions", "Sports"]
+      },
+      "State Board": {
+        "Class 1": ["Alphabets", "Numbers", "Colors"],
+        "Class 2": ["Animals", "Birds", "Fruits"],
+        "Class 3": ["Vegetables", "Days of the Week", "Months of the Year"],
+        "Class 4": ["Seasons", "Time", "Family"],
+        "Class 5": ["Hobbies", "Professions", "Sports"]
+      },
+      "UP Board": {
+        "Class 1": ["अक्षरमाला", "संख्याएँ", "रंग"],
+        "Class 2": ["जानवर", "पक्षी", "फल"],
+        "Class 3": ["सब्जियाँ", "सप्ताह के दिन", "साल के महीने"],
+        "Class 4": ["मौसम", "समय", "परिवार"],
+        "Class 5": ["शौक", "पेशे", "खेल"]
+      },
+      "MP Board": {
+        "Class 1": ["अक्षरमाला", "संख्याएँ", "रंग"],
+        "Class 2": ["जानवर", "पक्षी", "फल"],
+        "Class 3": ["सब्जियाँ", "सप्ताह के दिन", "साल के महीने"],
+        "Class 4": ["मौसम", "समय", "परिवार"],
+        "Class 5": ["शौक", "पेशे", "खेल"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["अक्षरमाला", "संख्याएँ", "रंग"],
+        "Class 2": ["प्राणी", "पक्षी", "फळ"],
+        "Class 3": ["भाजीपाला", "सप्ताहाचे दिवस", "महिन्याचे नाव"],
+        "Class 4": ["ऋतू", "वेळ", "कुटुंब"],
+        "Class 5": ["छंद", "व्यवसाय", "खेळ"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ಅಕ್ಷರಮಾಲೆ", "ಸಂಖ್ಯೆಗಳು", "ಬಣ್ಣಗಳು"],
+        "Class 2": ["ಪ್ರಾಣಿ", "ಪಕ್ಷಿಗಳು", "ಹಣ್ಣುಗಳು"],
+        "Class 3": ["ಕಾಯಿ ತರಕಾರಿಗಳು", "ವಾರದ ದಿನಗಳು", "ತಿಂಗಳ ಹೆಸರುಗಳು"],
+        "Class 4": ["ಋತುವುಗಳು", "ಸಮಯ", "ಕುಟುಂಬ"],
+        "Class 5": ["ಶોખ್", "ವೃತ್ತಿಗಳು", "ಕ್ರೀಡೆಗಳು"]
+      }
+    },
+    "Hindi": {
+      "CBSE": {
+        "Class 1": ["स्वर", "व्यंजन", "संख्याएँ"],
+        "Class 2": ["रंग", "फल", "पशु"],
+        "Class 3": ["पक्षी", "गिनती", "सप्ताह के दिन"],
+        "Class 4": ["महीने के नाम", "परिवार", "शरीर के अंग"],
+        "Class 5": ["खेल", "पेशे", "शौक"]
+      },
+      "ICSE": {
+        "Class 1": ["स्वर", "व्यंजन", "संख्याएँ"],
+        "Class 2": ["रंग", "फल", "पशु"],
+        "Class 3": ["पक्षी", "गिनती", "सप्ताह के दिन"],
+        "Class 4": ["महीने के नाम", "परिवार", "शरीर के अंग"],
+        "Class 5": ["खेल", "पेशे", "शौक"]
+      },
+      "State Board": {
+        "Class 1": ["स्वर", "व्यंजन", "संख्याएँ"],
+        "Class 2": ["रंग", "फल", "पशु"],
+        "Class 3": ["पक्षी", "गिनती", "सप्ताह के दिन"],
+        "Class 4": ["महीने के नाम", "परिवार", "शरीर के अंग"],
+        "Class 5": ["खेल", "पेशे", "शौक"]
+      },
+      "UP Board": {
+        "Class 1": ["स्वर", "व्यंजन", "संख्याएँ"],
+        "Class 2": ["रंग", "फल", "पशु"],
+        "Class 3": ["पक्षी", "गिनती", "सप्ताह के दिन"],
+        "Class 4": ["महीने के नाम", "परिवार", "शरीर के अंग"],
+        "Class 5": ["खेल", "पेशे", "शौक"]
+      },
+      "MP Board": {
+        "Class 1": ["स्वर", "व्यंजन", "संख्याएँ"],
+        "Class 2": ["रंग", "फल", "पशु"],
+        "Class 3": ["पक्षी", "गिनती", "सप्ताह के दिन"],
+        "Class 4": ["महीने के नाम", "परिवार", "शरीर के अंग"],
+        "Class 5": ["खेल", "पेशे", "शौक"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["स्वर", "व्यंजन", "संख्याएँ"],
+        "Class 2": ["रंग", "फळ", "प्राणी"],
+        "Class 3": ["पक्षी", "गिनती", "सप्ताहाचे दिवस"],
+        "Class 4": ["महिन्याचे नाव", "कुटुंब", "शरीराचे अवयव"],
+        "Class 5": ["खेळ", "व्यवसाय", "छंद"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ಸ್ವರಗಳು", "ವ್ಯಂಜನಗಳು", "ಸಂಖ್ಯೆಗಳು"],
+        "Class 2": ["ಬಣ್ಣಗಳು", "ಹಣ್ಣುಗಳು", "ಪ್ರಾಣಿಗಳು"],
+        "Class 3": ["ಪಕ್ಷಿಗಳು", "ಎಣಿಕೆ", "ವಾರದ ದಿನಗಳು"],
+        "Class 4": ["ತಿಂಗಳ ಹೆಸರುಗಳು", "ಕುಟುಂಬ", "ಶರೀರದ ಅಂಗಗಳು"],
+        "Class 5": ["ಕ್ರೀಡೆ", "ವೃತ್ತಿಗಳು", "ಶોખ್"]
+      }
+    },
+    "Social Studies": {
+      "CBSE": {
+        "Class 1": ["My Family", "My School", "My Neighborhood"],
+        "Class 2": ["My Country", "My State", "My City"],
+        "Class 3": ["Maps", "Continents and Oceans", "Weather and Climate"],
+        "Class 4": ["History", "Geography", "Civics"],
+        "Class 5": ["Economics", "Political Science", "Sociology"]
+      },
+      "ICSE": {
+        "Class 1": ["My Family", "My School", "My Neighborhood"],
+        "Class 2": ["My Country", "My State", "My City"],
+        "Class 3": ["Maps", "Continents and Oceans", "Weather and Climate"],
+        "Class 4": ["History", "Geography", "Civics"],
+        "Class 5": ["Economics", "Political Science", "Sociology"]
+      },
+      "State Board": {
+        "Class 1": ["My Family", "My School", "My Neighborhood"],
+        "Class 2": ["My Country", "My State", "My City"],
+        "Class 3": ["Maps", "Continents and Oceans", "Weather and Climate"],
+        "Class 4": ["History", "Geography", "Civics"],
+        "Class 5": ["Economics", "Political Science", "Sociology"]
+      },
+      "UP Board": {
+        "Class 1": ["माझा परिवार", "माझा स्कूल", "माझा पड़ोस"],
+        "Class 2": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 3": ["नक्शे", "महाद्वीप और महासागर", "जलवायु"],
+        "Class 4": ["इतिहास", "भूगोल", "नागरिक शास्त्र"],
+        "Class 5": ["अर्थशास्त्र", "राजनीतिक विज्ञान", "समाजशास्त्र"]
+      },
+      "MP Board": {
+        "Class 1": ["माझा परिवार", "माझा स्कूल", "माझा पड़ोस"],
+        "Class 2": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 3": ["नक्शे", "महाद्वीप और महासागर", "जलवायु"],
+        "Class 4": ["इतिहास", "भूगोल", "नागरिक शास्त्र"],
+        "Class 5": ["अर्थशास्त्र", "राजनीतिक विज्ञान", "समाजशास्त्र"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["माझा परिवार", "माझा शाळा", "माझा शेजारी"],
+        "Class 2": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 3": ["नकाशे", "खंड आणि महासागर", "हवामान आणि जलवायु"],
+        "Class 4": ["इतिहास", "भूगोल", "नागरिकशास्त्र"],
+        "Class 5": ["अर्थशास्त्र", "राजकीय विज्ञान", "समाजशास्त्र"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ನನ್ನ ಕುಟುಂಬ", "ನನ್ನ ಶಾಲೆ", "ನನ್ನ ನೆರೆಹೊರೆಯವರು"],
+        "Class 2": ["ನನ್ನ ದೇಶ", "ನನ್ನ ರಾಜ್ಯ", "ನನ್ನ ನಗರ"],
+        "Class 3": ["ನಕ್ಷೆಗಳು", "ಖಂಡಗಳು ಮತ್ತು ಮಹಾಸಾಗರಗಳು", "ಹವಾಮಾನ ಮತ್ತು ಹವಾಮಾನ"],
+        "Class 4": ["ಇತಿಹಾಸ", "ಭೂಗೋಳ", "ನಾಗರಿಕತೆ"],
+        "Class 5": ["ಆರ್ಥಿಕಶಾಸ್ತ್ರ", "ರಾಜಕೀಯ ವಿಜ್ಞಾನ", "ಸಮಾಜಶಾಸ್ತ್ರ"]
+      }
+    },
+    "History": {
+      "CBSE": {
+        "Class 1": ["My Family", "My School", "My Neighborhood"],
+        "Class 2": ["My Country", "My State", "My City"],
+        "Class 3": ["Maps", "Continents and Oceans", "Weather and Climate"],
+        "Class 4": ["Ancient Civilizations", "Medieval Period", "Modern History"],
+        "Class 5": ["Freedom Struggle", "Constitution", "Democracy"]
+      },
+      "ICSE": {
+        "Class 1": ["My Family", "My School", "My Neighborhood"],
+        "Class 2": ["My Country", "My State", "My City"],
+        "Class 3": ["Maps", "Continents and Oceans", "Weather and Climate"],
+        "Class 4": ["Ancient Civilizations", "Medieval Period", "Modern History"],
+        "Class 5": ["Freedom Struggle", "Constitution", "Democracy"]
+      },
+      "State Board": {
+        "Class 1": ["My Family", "My School", "My Neighborhood"],
+        "Class 2": ["My Country", "My State", "My City"],
+        "Class 3": ["Maps", "Continents and Oceans", "Weather and Climate"],
+        "Class 4": ["Ancient Civilizations", "Medieval Period", "Modern History"],
+        "Class 5": ["Freedom Struggle", "Constitution", "Democracy"]
+      },
+      "UP Board": {
+        "Class 1": ["माझा परिवार", "माझा स्कूल", "माझा पड़ोस"],
+        "Class 2": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 3": ["नक्शे", "महाद्वीप और महासागर", "जलवायु"],
+        "Class 4": ["प्राचीन सभ्यताएँ", "मध्यकालीन अवधि", "आधुनिक इतिहास"],
+        "Class 5": ["स्वतंत्रता संग्राम", "संविधान", "लोकतंत्र"]
+      },
+      "MP Board": {
+        "Class 1": ["माझा परिवार", "माझा स्कूल", "माझा पड़ोस"],
+        "Class 2": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 3": ["नक्शे", "महाद्वीप और महासागर", "जलवायु"],
+        "Class 4": ["प्राचीन सभ्यताएँ", "मध्यकालीन अवधि", "आधुनिक इतिहास"],
+        "Class 5": ["स्वतंत्रता संग्राम", "संविधान", "लोकतंत्र"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["माझा परिवार", "माझा शाळा", "माझा शेजारी"],
+        "Class 2": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 3": ["नकाशे", "खंड आणि महासागर", "हवामान आणि जलवायु"],
+        "Class 4": ["प्राचीन सभ्यताएँ", "मध्ययुगीन काळ", "आधुनिक इतिहास"],
+        "Class 5": ["स्वातंत्र्य संग्राम", "आविष्कार", "लोकशाही"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ನನ್ನ ಕುಟುಂಬ", "ನನ್ನ ಶಾಲೆ", "ನನ್ನ ನೆರೆಹೊರೆಯವರು"],
+        "Class 2": ["ನನ್ನ ದೇಶ", "ನನ್ನ ರಾಜ್ಯ", "ನನ್ನ ನಗರ"],
+        "Class 3": ["ನಕ್ಷೆಗಳು", "ಖಂಡಗಳು ಮತ್ತು ಮಹಾಸಾಗರಗಳು", "ಹವಾಮಾನ ಮತ್ತು ಹವಾಮಾನ"],
+        "Class 4": ["ಪ್ರಾಚೀನ ನಾಗರಿಕತೆಗಳು", "ಮಧ್ಯಕಾಲ", "ಆಧುನಿಕ ಇತಿಹಾಸ"],
+        "Class 5": ["ಸ್ವಾತಂತ್ರ್ಯ ಹೋರಾಟ", "ಸಂವಿಧಾನ", "ಜಾತ್ಯಾತೀತತೆ"]
+      }
+    },
+    "Music": {
+      "CBSE": {
+        "Class 1": ["Rhymes", "Songs", "Instruments"],
+        "Class 2": ["Classical Music", "Folk Music", "Dance Forms"],
+        "Class 3": ["Music Theory", "Notations", "Rhythm and Melody"],
+        "Class 4": ["Indian Music", "Western Music", "Music Appreciation"],
+        "Class 5": ["Composing Music", "Music and Technology", "Careers in Music"]
+      },
+      "ICSE": {
+        "Class 1": ["Rhymes", "Songs", "Instruments"],
+        "Class 2": ["Classical Music", "Folk Music", "Dance Forms"],
+        "Class 3": ["Music Theory", "Notations", "Rhythm and Melody"],
+        "Class 4": ["Indian Music", "Western Music", "Music Appreciation"],
+        "Class 5": ["Composing Music", "Music and Technology", "Careers in Music"]
+      },
+      "State Board": {
+        "Class 1": ["Rhymes", "Songs", "Instruments"],
+        "Class 2": ["Classical Music", "Folk Music", "Dance Forms"],
+        "Class 3": ["Music Theory", "Notations", "Rhythm and Melody"],
+        "Class 4": ["Indian Music", "Western Music", "Music Appreciation"],
+        "Class 5": ["Composing Music", "Music and Technology", "Careers in Music"]
+      },
+      "UP Board": {
+        "Class 1": ["गाने", "संगीत के उपकरण", "नृत्य के रूप"],
+        "Class 2": ["क्लासिकल म्यूजिक", "फोक म्यूजिक", "नृत्य के रूप"],
+        "Class 3": ["संगीत सिद्धांत", "नोटेशन", "ताल और राग"],
+        "Class 4": ["भारतीय संगीत", "पश्चिमी संगीत", "संगीत प्रशंसा"],
+        "Class 5": ["संगीत रचना", "संगीत और प्रौद्योगिकी", "संगीत में करियर"]
+      },
+      "MP Board": {
+        "Class 1": ["गाने", "संगीत के उपकरण", "नृत्य के रूप"],
+        "Class 2": ["क्लासिकल म्यूजिक", "फोक म्यूजिक", "नृत्य के रूप"],
+        "Class 3": ["संगीत सिद्धांत", "नोटेशन", "ताल और राग"],
+        "Class 4": ["भारतीय संगीत", "पश्चिमी संगीत", "संगीत प्रशंसा"],
+        "Class 5": ["संगीत रचना", "संगीत और प्रौद्योगिकी", "संगीत में करियर"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["गाणी", "संगीताचे उपकरणे", "नृत्याचे प्रकार"],
+        "Class 2": ["शास्त्रीय संगीत", "लोक संगीत", "नृत्याचे प्रकार"],
+        "Class 3": ["संगीत सिद्धांत", "नोटेशन", "ताल आणि राग"],
+        "Class 4": ["भारतीय संगीत", "पश्चिमी संगीत", "संगीत प्रशंसा"],
+        "Class 5": ["संगीत रचना", "संगीत आणि तंत्रज्ञान", "संगीतातील करिअर"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ಗೀತೆಗಳು", "ಸಂಗೀತ ಸಾಧನಗಳು", "ನೃತ್ಯ ಶೈಲಿಗಳು"],
+        "Class 2": ["ಶ್ರೇಣೀಬದ್ಧ ಸಂಗೀತ", "ಜಾನಪದ ಸಂಗೀತ", "ನೃತ್ಯ ಶೈಲಿಗಳು"],
+        "Class 3": ["ಸಂಗೀತ ತತ್ವಶಾಸ್ತ್ರ", "ನೋಟೇಶನ್", "ತಾಳ ಮತ್ತು ರಾಗ"],
+        "Class 4": ["ಭಾರತೀಯ ಸಂಗೀತ", "ಪಶ್ಚಿಮ ಸಂಗೀತ", "ಸಂಗೀತ ಮೆಚ್ಚುಗೆ"],
+        "Class 5": ["ಸಂಗೀತ ರಚನೆ", "ಸಂಗೀತ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ", "ಸಂಗೀತದಲ್ಲಿ ಉದ್ಯೋಗಗಳು"]
+      }
+    },
+    "Art": {
+      "CBSE": {
+        "Class 1": ["Colors", "Shapes", "Nature"],
+        "Class 2": ["Animals", "Birds", "Fruits"],
+        "Class 3": ["Landscape", "Portrait", "Still Life"],
+        "Class 4": ["History of Art", "Famous Artists", "Art Techniques"],
+        "Class 5": ["Modern Art", "Art and Culture", "Careers in Art"]
+      },
+      "ICSE": {
+        "Class 1": ["Colors", "Shapes", "Nature"],
+        "Class 2": ["Animals", "Birds", "Fruits"],
+        "Class 3": ["Landscape", "Portrait", "Still Life"],
+        "Class 4": ["History of Art", "Famous Artists", "Art Techniques"],
+        "Class 5": ["Modern Art", "Art and Culture", "Careers in Art"]
+      },
+      "State Board": {
+        "Class 1": ["Colors", "Shapes", "Nature"],
+        "Class 2": ["Animals", "Birds", "Fruits"],
+        "Class 3": ["Landscape", "Portrait", "Still Life"],
+        "Class 4": ["History of Art", "Famous Artists", "Art Techniques"],
+        "Class 5": ["Modern Art", "Art and Culture", "Careers in Art"]
+      },
+      "UP Board": {
+        "Class 1": ["रंग", "आकृतियाँ", "प्रकृति"],
+        "Class 2": ["जानवर", "पक्षी", "फल"],
+        "Class 3": ["दृश्यपट", "चित्र", "स्थिर जीवन"],
+        "Class 4": ["कला का इतिहास", "प्रसिद्ध कलाकार", "कला तकनीक"],
+        "Class 5": ["आधुनिक कला", "कला और संस्कृति", "कला में करियर"]
+      },
+      "MP Board": {
+        "Class 1": ["रंग", "आकृतियाँ", "प्रकृति"],
+        "Class 2": ["जानवर", "पक्षी", "फल"],
+        "Class 3": ["दृश्यपट", "चित्र", "स्थिर जीवन"],
+        "Class 4": ["कला का इतिहास", "प्रसिद्ध कलाकार", "कला तकनीक"],
+        "Class 5": ["आधुनिक कला", "कला और संस्कृति", "कला में करियर"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["रंग", "आकृतियाँ", "प्रकृति"],
+        "Class 2": ["प्राणी", "पक्षी", "फळ"],
+        "Class 3": [" landsकೇಪ್", "ಪೋರ್ಟ್ರೇಟ್", "ಸ್ಥಿರ ಜೀವನ"],
+        "Class 4": ["ಕಲೆಯ ಇತಿಹಾಸ", "ಪ್ರಸಿದ್ಧ ಕಲಾವಿದ", "ಕಲೆ ತಂತ್ರಗಳು"],
+        "Class 5": ["ಆಧುನಿಕ ಕಲೆ", "ಕಲೆ ಮತ್ತು ಸಂಸ್ಕೃತಿ", "ಕಲೆಯಲ್ಲಿ ಉದ್ಯೋಗಗಳು"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ಬಣ್ಣಗಳು", "ಆಕೃತಿಗಳು", "ಪ್ರಕೃತಿ"],
+        "Class 2": ["ಪ್ರಾಣಿ", "ಪಕ್ಷಿಗಳು", "ಹಣ್ಣುಗಳು"],
+        "Class 3": ["ದೃಶ್ಯಕಲೆ", "ಪೋಟ್ರೇಟ್", "ಸ್ಥಿರ ಜೀವನ"],
+        "Class 4": ["ಕಲೆಯ ಇತಿಹಾಸ", "ಪ್ರಸಿದ್ಧ ಕಲಾವಿದರು", "ಕಲೆ ತಂತ್ರಗಳು"],
+        "Class 5": ["ಆಧುನಿಕ ಕಲೆ", "ಕಲೆ ಮತ್ತು ಸಂಸ್ಕೃತಿ", "ಕಲೆಯಲ್ಲಿ ಉದ್ಯೋಗಗಳು"]
+      }
+    },
+    "Physical Education": {
+      "CBSE": {
+        "Class 1": ["Introduction to Physical Education", "Importance of Physical Education", "Physical Education and Health"],
+        "Class 2": ["Games and Sports", "Yoga", "Exercise"],
+        "Class 3": ["Fitness and Health", "Nutrition", "Personal Hygiene"],
+        "Class 4": ["First Aid", "Safety and Security", "Disaster Management"],
+        "Class 5": ["Physical Education and Community", "Careers in Physical Education", "Olympic Games"]
+      },
+      "ICSE": {
+        "Class 1": ["Introduction to Physical Education", "Importance of Physical Education", "Physical Education and Health"],
+        "Class 2": ["Games and Sports", "Yoga", "Exercise"],
+        "Class 3": ["Fitness and Health", "Nutrition", "Personal Hygiene"],
+        "Class 4": ["First Aid", "Safety and Security", "Disaster Management"],
+        "Class 5": ["Physical Education and Community", "Careers in Physical Education", "Olympic Games"]
+      },
+      "State Board": {
+        "Class 1": ["Introduction to Physical Education", "Importance of Physical Education", "Physical Education and Health"],
+        "Class 2": ["Games and Sports", "Yoga", "Exercise"],
+        "Class 3": ["Fitness and Health", "Nutrition", "Personal Hygiene"],
+        "Class 4": ["First Aid", "Safety and Security", "Disaster Management"],
+        "Class 5": ["Physical Education and Community", "Careers in Physical Education", "Olympic Games"]
+      },
+      "UP Board": {
+        "Class 1": ["शारीरिक शिक्षेची ओळख", "शारीरिक शिक्षेचे महत्त्व", "शारीरिक शिक्षा आणि आरोग्य"],
+        "Class 2": ["खेळ आणि क्रीडा", "योग", "व्यायाम"],
+        "Class 3": ["तंदुरुस्ती आणि आरोग्य", "पोषण", "व्यक्तिगत स्वच्छता"],
+        "Class 4": ["प्राथमिक उपचार", "सुरक्षा आणि संरक्षण", "आपत्ती व्यवस्थापन"],
+        "Class 5": ["शारीरिक शिक्षा आणि समुदाय", "शारीरिक शिक्षणातील करिअर", "ऑलिंपिक खेळ"]
+      },
+      "MP Board": {
+        "Class 1": ["शारीरिक शिक्षेची ओळख", "शारीरिक शिक्षेचे महत्त्व", "शारीरिक शिक्षा आणि आरोग्य"],
+        "Class 2": ["खेळ आणि क्रीडा", "योग", "व्यायाम"],
+        "Class 3": ["तंदुरुस्ती आणि आरोग्य", "पोषण", "व्यक्तिगत स्वच्छता"],
+        "Class 4": ["प्राथमिक उपचार", "सुरक्षा आणि संरक्षण", "आपत्ती व्यवस्थापन"],
+        "Class 5": ["शारीरिक शिक्षा आणि समुदाय", "शारीरिक शिक्षणातील करिअर", "ऑलिंपिक खेळ"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["शारीरिक शिक्षेची ओळख", "शारीरिक शिक्षेचे महत्त्व", "शारीरिक शिक्षा आणि आरोग्य"],
+        "Class 2": ["खेळ आणि क्रीडा", "योग", "व्यायाम"],
+        "Class 3": ["तंदुरुस्ती आणि आरोग्य", "पोषण", "व्यक्तिगत स्वच्छता"],
+        "Class 4": ["प्राथमिक उपचार", "सुरक्षा आणि संरक्षण", "आपत्ती व्यवस्थापन"],
+        "Class 5": ["शारीरिक शिक्षा आणि समुदाय", "शारीरिक शिक्षणातील करिअर", "ऑलिंपिक खेळ"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ಶಾರೀರಿಕ ಶಿಕ್ಷಣಕ್ಕೆ ಪರಿಚಯ", "ಶಾರೀರಿಕ ಶಿಕ್ಷಣದ ಮಹತ್ವ", "ಶಾರೀರಿಕ ಶಿಕ್ಷಣ ಮತ್ತು ಆರೋಗ್ಯ"],
+        "Class 2": ["ಕ್ರೀಡೆ ಮತ್ತು ಕ್ರೀಡಾ", "ಯೋಗ", "ವ್ಯಾಯಾಮ"],
+        "Class 3": ["ಆರೋಗ್ಯ ಮತ್ತು ಫಿಟ್ನೆಸ್", "ಪೋಷಣಾ", "ವೈಯಕ್ತಿಕ ಸ್ವಚ್ಛತೆ"],
+        "Class 4": ["ಪ್ರಾಥಮಿಕ ಚಿಕಿತ್ಸೆ", "ಸುರಕ್ಷತೆ ಮತ್ತು ಭದ್ರತೆ", "ಆಪತ್ತು ನಿರ್ವಹಣೆ"],
+        "Class 5": ["ಶಾರೀರಿಕ ಶಿಕ್ಷಣ ಮತ್ತು ಸಮುದಾಯ", "ಶಾರೀರಿಕ ಶಿಕ್ಷಣದಲ್ಲಿ ಉದ್ಯೋಗಗಳು", "ಒಲಿಂಪಿಕ್ ಕ್ರೀಡೆಗಳು"]
+      }
+    },
+    "General Knowledge": {
+      "CBSE": {
+        "Class 1": ["My Country", "My State", "My City"],
+        "Class 2": ["Famous Personalities", "National Symbols", "Languages"],
+        "Class 3": ["Continents and Oceans", "Mountains and Rivers", "Deserts and Forests"],
+        "Class 4": ["Inventions and Discoveries", "Awards and Honors", "Books and Authors"],
+        "Class 5": ["Current Affairs", "Environmental Issues", "Space Exploration"]
+      },
+      "ICSE": {
+        "Class 1": ["My Country", "My State", "My City"],
+        "Class 2": ["Famous Personalities", "National Symbols", "Languages"],
+        "Class 3": ["Continents and Oceans", "Mountains and Rivers", "Deserts and Forests"],
+        "Class 4": ["Inventions and Discoveries", "Awards and Honors", "Books and Authors"],
+        "Class 5": ["Current Affairs", "Environmental Issues", "Space Exploration"]
+      },
+      "State Board": {
+        "Class 1": ["My Country", "My State", "My City"],
+        "Class 2": ["Famous Personalities", "National Symbols", "Languages"],
+        "Class 3": ["Continents and Oceans", "Mountains and Rivers", "Deserts and Forests"],
+        "Class 4": ["Inventions and Discoveries", "Awards and Honors", "Books and Authors"],
+        "Class 5": ["Current Affairs", "Environmental Issues", "Space Exploration"]
+      },
+      "UP Board": {
+        "Class 1": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 2": ["प्रसिद्ध व्यक्तिमत्वे", "राष्ट्रीय प्रतीकं", "भाषा"],
+        "Class 3": ["खंड आणि महासागर", "पर्वत आणि नद्या", "मरुस्थल आणि जंगल"],
+        "Class 4": ["आविष्कार आणि शोध", "पुरस्कार आणि सन्मान", "पुस्तकं आणि लेखक"],
+        "Class 5": ["सध्याच्या घडामोडी", "पर्यावरणीय समस्या", "अंतराळ अन्वेषण"]
+      },
+      "MP Board": {
+        "Class 1": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 2": ["प्रसिद्ध व्यक्तिमत्वे", "राष्ट्रीय प्रतीकं", "भाषा"],
+        "Class 3": ["खंड आणि महासागर", "पर्वत आणि नद्या", "मरुस्थल आणि जंगल"],
+        "Class 4": ["आविष्कार आणि शोध", "पुरस्कार आणि सन्मान", "पुस्तकं आणि लेखक"],
+        "Class 5": ["सध्याच्या घडामोडी", "पर्यावरणीय समस्या", "अंतराळ अन्वेषण"]
+      },
+      "Maharashtra Board": {
+        "Class 1": ["माझा देश", "माझा राज्य", "माझा शहर"],
+        "Class 2": ["प्रसिद्ध व्यक्तिमत्वे", "राष्ट्रीय प्रतीकं", "भाषा"],
+        "Class 3": ["खंड आणि महासागर", "पर्वत आणि नद्या", "मरुस्थल आणि जंगल"],
+        "Class 4": ["आविष्कार आणि शोध", "पुरस्कार आणि सन्मान", "पुस्तकं आणि लेखक"],
+        "Class 5": ["सध्याच्या घडामोडी", "पर्यावरणीय समस्या", "अंतराळ अन्वेषण"]
+      },
+      "Karnataka Board": {
+        "Class 1": ["ನನ್ನ ದೇಶ", "ನನ್ನ ರಾಜ್ಯ", "ನನ್ನ ನಗರ"],
+        "Class 2": ["ಪ್ರಸಿದ್ಧ ವ್ಯಕ್ತಿತ್ವಗಳು", "ರಾಷ್ಟ್ರೀಯ ಚಿಹ್ನೆಗಳು", "ಭಾಷೆಗಳು"],
+        "Class 3": ["ಖಂಡಗಳು ಮತ್ತು ಮಹಾಸಾಗರಗಳು", "ಪರ್ವತಗಳು ಮತ್ತು ನದಿಗಳು", "ಮರುಭೂಮಿ ಮತ್ತು ಕಾಡುಗಳು"],
+        "Class 4": ["ಆವಿಷ್ಕಾರಗಳು ಮತ್ತು ಅನ್ವೇಷಣೆಗಳು", "ಬ상ಗಿತಗಳು ಮತ್ತು ಗೌರವಗಳು", "ಪುಸ್ತಕಗಳು ಮತ್ತು ಲೇಖಕರು"],
+        "Class 5": ["ಪ್ರಸ್ತುತ ಘಟನೆಗಳು", "ಪರಿಸರ ಸಮಸ್ಯೆಗಳು", "ಅಂತರಿಕ್ಷ ಅನ್ವೇಷಣೆ"]
+      }
+    }
+  };

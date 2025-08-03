@@ -1,0 +1,72 @@
+{
+  "Mathematics": [
+    {"class": "Class 1", "topics": ["Numbers", "Addition", "Subtraction"]},
+    {"class": "Class 2", "topics": ["Multiplication", "Division", "Fractions"]},
+    {"class": "Class 3", "topics": ["Decimals", "RATIOS", "Proportions"]},
+    {"class": "Class 4", "topics": ["Integers", "Algebra", "Geometry"]},
+    {"class": "Class 5", "topics": ["Mensuration", "Data Handling", "Probability"]}
+  ],
+  "Science": [
+    {"class": "Class 1", "topics": ["Living and Non-Living Things", "Plants", "Animals"]},
+    {"class": "Class 2", "topics": ["Human Body", "Food", "Water"]},
+    {"class": "Class 3", "topics": ["Matter", "Force and Work", "Energy"]},
+    {"class": "Class 4", "topics": ["The Earth", "Our Solar System", "Stars and Planets"]},
+    {"class": "Class 5", "topics": ["Famous Scientists", "Inventions", "Scientific Instruments"]}
+  ],
+  "English": [
+    {"class": "Class 1", "topics": ["Alphabets", "Numbers", "Colors"]},
+    {"class": "Class 2", "topics": ["Animals", "Birds", "Fruits"]},
+    {"class": "Class 3", "topics": ["Vegetables", "Days of the Week", "Months of the Year"]},
+    {"class": "Class 4", "topics": ["Seasons", "Time", "Family"]},
+    {"class": "Class 5", "topics": ["Hobbies", "Professions", "Sports"]}
+  ],
+  "Hindi": [
+    {"class": "Class 1", "topics": ["स्वर", "व्यंजन", "संख्याएँ"]},
+    {"class": "Class 2", "topics": ["रंग", "फल", "पशु"]},
+    {"class": "Class 3", "topics": ["पक्षी", "गिनती", "सप्ताह के दिन"]},
+    {"class": "Class 4", "topics": ["महीने के नाम", "परिवार", "शरीर के अंग"]},
+    {"class": "Class 5", "topics": ["खेल", "पेशे", "शौक"]}
+  ],
+  "Social Studies": [
+    {"class": "Class 1", "topics": ["My Family", "My School", "My Neighborhood"]},
+    {"class": "Class 2", "topics": ["My Country", "My State", "My City"]},
+    {"class": "Class 3", "topics": ["Maps", "Continents and Oceans", "Weather and Climate"]},
+    {"class": "Class 4", "topics": ["History", "Geography", "Civics"]},
+    {"class": "Class 5", "topics": ["Economics", "Political Science", "Sociology"]}
+  ],
+  "History": [
+    {"class": "Class 1", "topics": ["My Family", "My School", "My Neighborhood"]},
+    {"class": "Class 2", "topics": ["My Country", "My State", "My City"]},
+    {"class": "Class 3", "topics": ["Maps", "Continents and Oceans", "Weather and Climate"]},
+    {"class": "Class 4", "topics": ["Ancient Civilizations", "Medieval Period", "Modern History"]},
+    {"class": "Class 5", "topics": ["Freedom Struggle", "Constitution", "Democracy"]}
+  ],
+  "Music": [
+    {"class": "Class 1", "topics": ["Rhymes", "Songs", "Instruments"]},
+    {"class": "Class 2", "topics": ["Classical Music", "Folk Music", "Dance Forms"]},
+    {"class": "Class 3", "topics": ["Music Theory", "Notations", "Rhythm and Melody"]},
+    {"class": "Class 4", "topics": ["Indian Music", "Western Music", "Music Appreciation"]},
+    {"class": "Class 5", "topics": ["Composing Music", "Music and Technology", "Careers in Music"]}
+  ],
+  "Art": [
+    {"class": "Class 1", "topics": ["Colors", "Shapes", "Nature"]},
+    {"class": "Class 2", "topics": ["Animals", "Birds", "Fruits"]},
+    {"class": "Class 3", "topics": ["Landscape", "Portrait", "Still Life"]},
+    {"class": "Class 4", "topics": ["History of Art", "Famous Artists", "Art Techniques"]},
+    {"class": "Class 5", "topics": ["Modern Art", "Art and Culture", "Careers in Art"]}
+  ],
+  "Physical Education": [
+    {"class": "Class 1", "topics": ["Introduction to Physical Education", "Importance of Physical Education", "Physical Education and Health"]},
+    {"class": "Class 2", "topics": ["Games and Sports", "Yoga", "Exercise"]},
+    {"class": "Class 3", "topics": ["Fitness and Health", "Nutrition", "Personal Hygiene"]},
+    {"class": "Class 4", "topics": ["First Aid", "Safety and Security", "Disaster Management"]},
+    {"class": "Class 5", "topics": ["Physical Education and Community", "Careers in Physical Education", "Olympic Games"]}
+  ],
+  "General Knowledge": [
+    {"class": "Class 1", "topics": ["My Country", "My State", "My City"]},
+    {"class": "Class 2", "topics": ["Famous Personalities", "National Symbols", "Languages"]},
+    {"class": "Class 3", "topics": ["Continents and Oceans", "Mountains and Rivers", "Deserts and Forests"]},
+    {"class": "Class 4", "topics": ["Inventions and Discoveries", "Awards and Honors", "Books and Authors"]},
+    {"class": "Class 5", "topics": ["Current Affairs", "Environmental Issues", "Space Exploration"]}
+  ]
+}

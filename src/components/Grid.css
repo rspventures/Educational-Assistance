@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  /* Now we have 6 rows total: 1 for abbreviations + 5 for content */
+  grid-template-rows: auto repeat(5, 1fr); 
+  grid-template-columns: repeat(var(--num-cols), 1fr); 
+  gap: 1px;
+  border: 1px solid #ccc;
+}
+
+.grid-cell {
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  min-height: 20px;
+  min-width: 40px;
+  border-radius: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the abbreviation cells in the top row */
+.abbreviation-cell {
+  font-weight: bold;
+}
+    
+/* Style for the divider row */
+.divider-row {
+  background-color: #333;
+  min-height: 1px;
+}

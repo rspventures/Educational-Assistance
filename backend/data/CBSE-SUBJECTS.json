@@ -1,0 +1,61 @@
+[
+  {
+    "class": "Class 1",
+    "subjects": {
+      "Mathematics": ["Numbers", "Addition", "Subtraction"],
+      "Science": ["Living and Non-Living Things", "Plants", "Animals"],
+      "English": ["Alphabets", "Numbers", "Colors"],
+      "Hindi": ["स्वर", "व्यंजन", "संख्याएँ"],
+      "Social Studies": ["My Family", "My School", "My Neighborhood"],
+      "History": ["My Family", "My School", "My Neighborhood"],
+      "Music": ["Rhymes", "Songs", "Instruments"],
+      "Art": ["Colors", "Shapes", "Nature"],
+      "Physical Education": ["Introduction to Physical Education", "Importance of Physical Education", "Physical Education and Health"],
+      "General Knowledge": ["My Country", "My State", "My City"]
+    }
+  },
+  {
+    "class": "Class 2",
+    "subjects": {
+      "Mathematics": ["Multiplication", "Division", "Fractions"],
+      "Science": ["Human Body", "Food", "Water"],
+      "English": ["Animals", "Birds", "Fruits"],
+      "Hindi": ["रंग", "फल", "पशु"],
+      "Social Studies": ["My Country", "My State", "My City"],
+      "History": ["My Country", "My State", "My City"],
+      "Music": ["Classical Music", "Folk Music", "Dance Forms"],
+      "Art": ["Animals", "Birds", "Fruits"],
+      "Physical Education": ["Games and Sports", "Yoga", "Exercise"],
+      "General Knowledge": ["Famous Personalities", "National Symbols", "Languages"]
+    }
+  },
+  {
+    "class": "Class 3",
+    "subjects": {
+      "Mathematics": ["Numbers", "Addition", "Subtraction", "Decimals", "Ratios", "Proportions"],
+      "English": ["Hobbies", "Professions", "Sports"]
+    }
+  },
+  {
+    "class": "Class 4",
+    "subjects": {
+      "Mathematics": ["Integers", "Algebra", "Geometry"],
+      "Science": ["The Earth", "Our Solar System", "Stars and Planets"],
+      "English": ["Seasons", "Time", "Family"],
+      "Hindi": ["महीने के नाम", "परिवार", "शरीर के अंग"],
+      "Social Studies": ["History", "Geography", "Civics"],
+      "History": ["Ancient Civilizations", "Medieval Period", "Modern History"],
+      "Music": ["Indian Music", "Western Music", "Music Appreciation"],
+      "Art": ["History of Art", "Famous Artists", "Art Techniques"],
+      "Physical Education": ["First Aid", "Safety and Security", "Disaster Management"],
+      "General Knowledge": ["Inventions and Discoveries", "Awards and Honors", "Books and Authors"]
+    }
+  },
+  {
+    "class": "Class 5",
+    "subjects": {
+      "Mathematics": ["Numbers", "Addition", "Subtraction", "Multiplication", "Decimals", "RATIOS", "Proportions", "measurements", "Data Handling", "Probability"],
+      "English": ["Hobbies", "Professions", "Sports"]
+    }
+  }
+]

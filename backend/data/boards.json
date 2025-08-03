@@ -1,0 +1,9 @@
+[
+  { "ID": 1, "NAME": "CBSE" },
+  { "ID": 2, "NAME": "ICSE" },
+  { "ID": 3, "NAME": "State Board" },
+  { "ID": 4, "NAME": "UP Board" },
+  { "ID": 5, "NAME": "MP Board" },
+  { "ID": 6, "NAME": "Maharashtra Board" },
+  { "ID": 7, "NAME": "Karnataka Board" }
+]
