@@ -16,8 +16,14 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize OpenAI client
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# Load config file
+CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config.json')
+try:
+    with open(CONFIG_PATH) as f:
+        config = json.load(f)
+except Exception as e:
+    logger.error(f"Error loading config: {str(e)}")
+    config = {}
 
 class ExplanationRequest(BaseModel):
     topic: str
@@ -48,13 +54,21 @@ def update_progress(student_id: str, topic: str):
                 break 
 
 
-# Load backend port from config.json
-CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config.json')
-with open(CONFIG_PATH) as f:
-    config = json.load(f)
+# Load configuration values
 BACKEND_PORT = config.get('backendPort', 5000)
-FRONTENT_PORT = config.get('frontendPort', 4001)
-OPENAI_API_KEY = config.get('OPENAI_API_KEY', '')
+FRONTEND_PORT = config.get('frontendPort', 4001)
+
+# Set up OpenAI API key with proper precedence
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    OPENAI_API_KEY = config.get('OPENAI_API_KEY', '')
+    if not OPENAI_API_KEY:
+        logger.error("OpenAI API key not found in environment or config")
+    elif not OPENAI_API_KEY.startswith('sk-') or 'proj-' in OPENAI_API_KEY:
+        logger.error("Invalid OpenAI API key format. Key should start with 'sk-' and not contain 'proj-'")
+        OPENAI_API_KEY = ''
+
+openai.api_key = OPENAI_API_KEY
 
 
 class ChatRequest(BaseModel):
@@ -70,7 +84,7 @@ class ChatRequest(BaseModel):
 client = OpenAIClient()
 validator = ValidatorAgent()
 
-printlin=print("FRONTENT_PORT" + str(FRONTENT_PORT))
+logger.info(f"Frontend port: {FRONTEND_PORT}")
 #OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 app = Flask(__name__)
@@ -108,14 +122,13 @@ def load_Boards():
 
 
 # --- CORS Configuration ---
+# Enable CORS for all routes
 CORS(app, 
-     origins=[f"http://localhost:{FRONTENT_PORT}", "http://localhost:3000"],
-     allow_credentials=True,
      resources={r"/*": {
-         "origins": "*",
+         "origins": ["http://localhost:3000", f"http://localhost:{FRONTEND_PORT}"],
          "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
          "allow_headers": ["Content-Type", "Authorization"],
-         "expose_headers": ["Content-Range", "X-Content-Range"]
+         "supports_credentials": True
      }})
 
 # --- User Data (for demonstration purposes) ---
@@ -127,7 +140,7 @@ users = {
 
 # --- Routes ---
 @app.route("/api/login", methods=["POST", "OPTIONS"])
-@cross_origin(origins=[f"http://localhost:{FRONTENT_PORT}", "http://localhost:3000"], 
+@cross_origin(origins=[f"http://localhost:{FRONTEND_PORT}", "http://localhost:3000"], 
              allow_headers=["Content-Type", "Authorization"],
              supports_credentials=True)
 def login():
@@ -200,7 +213,7 @@ def login():
         return jsonify({"msg": "Bad username or password"}), 401
 
 @app.route("/api/protected", methods=["GET", "OPTIONS"])
-@cross_origin(origins=[f"http://localhost:{FRONTENT_PORT}", "http://localhost:3000"], 
+@cross_origin(origins=[f"http://localhost:{FRONTEND_PORT}", "http://localhost:3000"], 
              allow_headers=["Content-Type", "Authorization"],
              supports_credentials=True)
 @jwt_required() # This decorator protects the endpoint, requiring a valid JWT
@@ -230,7 +243,7 @@ def status():
         return jsonify(is_logged_in=False, username=None), 200
 
 @app.route("/api/subjects", methods=["GET", "OPTIONS"])
-@cross_origin(origins=[f"http://localhost:{FRONTENT_PORT}", "http://localhost:3000"], 
+@cross_origin(origins=[f"http://localhost:{FRONTEND_PORT}", "http://localhost:3000"], 
              allow_headers=["Content-Type", "Authorization"],
              supports_credentials=True,
              max_age=3600)  # Cache preflight results for 1 hour
@@ -277,50 +290,51 @@ def subjects():
 
 
 @app.route('/api/search', methods=['POST', 'OPTIONS'])
-@cross_origin(origins=[f"http://localhost:{FRONTENT_PORT}", "http://localhost:3000"], 
-             allow_headers=["Content-Type", "Authorization"],
-             supports_credentials=True)
 def search():
     if request.method == "OPTIONS":
         return jsonify({"status": "ok"}), 200
         
-    data = request.get_json()
-    print("Data Sent from Client is ::" + str(data))
-    query = data.get('message', '')
-    print("Query Sent is ::" + str(query) + ' and API key using is:' + OPENAI_API_KEY)
-    if not OPENAI_API_KEY:
-        return jsonify({'results': [], 'error': 'OpenAI API key not set'}), 500
-    # Call OpenAI ChatGPT API
     try:
-        response = requests.post(
-            'https://api.openai.com/v1/chat/completions',
-            headers={
-                'Authorization': f'Bearer {OPENAI_API_KEY}',
-                'Content-Type': 'application/json'
-            },
-            json={
-                'model': 'gpt-3.5-turbo',
-                'messages': [
-                    {"role": "system", "content": "You are a helpful assistant."},
-                    {"role": "user", "content": query}
-                ],
-                'max_tokens': 100
-            }
+        data = request.get_json()
+        if not data:
+            return jsonify({'error': 'No data provided'}), 400
+            
+        query = data.get('message', '')
+        if not query:
+            return jsonify({'error': 'No message provided'}), 400
+            
+        logger.info(f"Received search query: {query}")
+        
+        if not OPENAI_API_KEY:
+            logger.error("OpenAI API key not configured")
+            return jsonify({'error': 'OpenAI API key not configured'}), 500
+            
+        # Call OpenAI ChatGPT API
+        response = openai.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a helpful educational assistant."},
+                {"role": "user", "content": query}
+            ],
+            max_tokens=500,
+            temperature=0.7
         )
-        print("Response Received is:" + str(response.json))
-        response.raise_for_status()
-        gpt_data = response.json()
-        print("Response Received GPT:" + str(response))
-        answer = gpt_data['choices'][0]['message']['content']
-        results = [answer]
-        return jsonify({'results': results})
+        
+        answer = response.choices[0].message.content
+        logger.info("Successfully generated response")
+        return jsonify({'results': [answer]})
+        
+    except openai.AuthenticationError as e:
+        logger.error(f"OpenAI Authentication error: {str(e)}")
+        return jsonify({'error': 'Invalid OpenAI API key'}), 401
+    except openai.APIError as e:
+        logger.error(f"OpenAI API error: {str(e)}")
+        return jsonify({'error': 'OpenAI API error'}), 503
     except Exception as e:
-        return jsonify({'results': [], 'error': str(e)}), 500
+        logger.error(f"Unexpected error in search: {str(e)}")
+        return jsonify({'error': f'Unexpected error: {str(e)}'}), 500
 
 @app.route("/api/chat", methods=["POST", "OPTIONS"])
-@cross_origin(origins=[f"http://localhost:{FRONTENT_PORT}", "http://localhost:3000"], 
-             allow_headers=["Content-Type", "Authorization"],
-             supports_credentials=True)
 def chat():
     if request.method == "OPTIONS":
         return jsonify({"status": "ok"}), 200
@@ -370,9 +384,6 @@ def chat():
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.route("/api/explain", methods=["POST", "OPTIONS"])
-@cross_origin(origins=[f"http://localhost:{FRONTENT_PORT}", "http://localhost:3000"], 
-             allow_headers=["Content-Type", "Authorization"],
-             supports_credentials=True)
 def explain_concept():
     if request.method == "OPTIONS":
         return jsonify({"status": "ok"}), 200
@@ -380,11 +391,11 @@ def explain_concept():
     data = request.get_json()
     try:
         # Generate AI response
-        response = openai.ChatCompletion.create(
+        response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are a helpful educational assistant. Explain concepts clearly and concisely, using age-appropriate language and examples."},
-                {"role": "user", "content": f"Topic: {request.topic}\nQuestion: {request.question}"}
+                {"role": "user", "content": f"Topic: {data.get('topic')}\nQuestion: {data.get('question')}"}
             ],
             max_tokens=500,
             temperature=0.7
@@ -402,9 +413,6 @@ def explain_concept():
 
 
 @app.route("/api/progress", methods=["POST", "OPTIONS"])
-@cross_origin(origins=[f"http://localhost:{FRONTENT_PORT}", "http://localhost:3000"], 
-             allow_headers=["Content-Type", "Authorization"],
-             supports_credentials=True)
 def update_student_progress():
     if request.method == "OPTIONS":
         return jsonify({"status": "ok"}), 200
