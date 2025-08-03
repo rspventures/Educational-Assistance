@@ -1,0 +1,5 @@
+#For backen Service
+python .\backend\app.py
+
+#For Frontend Service
+npm start
