@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 class OpenAIClient:
     def __init__(self):
         # Initialize the OpenAI client with the API key
-        self.client = OpenAI(api_key="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")
+        self.client = OpenAI(api_key=OPENAI_API_KEY)
         logger.info("OpenAI client initialized")
 
     def generate(self, prompt, model=None):

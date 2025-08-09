@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Grid.css';
-import { col } from 'framer-motion/client';
+import { motion } from 'framer-motion';
 
 const Grid = ({ operation, num1, num2, numCols }) => {
+    const [animationStep, setAnimationStep] = useState(0);
+    // 0: Initial state
+    // 1: Show first number
+    // 2: Show second number
+    // 3: Show carry numbers
+    // 4: Show result
 
     const placeValues = ['O', 'T', 'H', 'Th', 'TTh', 'L', 'TL', 'C', 'TC'];
     const abbreviations = placeValues.slice(0, numCols).reverse();
@@ -126,42 +132,78 @@ const Grid = ({ operation, num1, num2, numCols }) => {
         }
     }
 
-    return (
+    // Effect for controlling animation steps
+    useEffect(() => {
+        const timers = [
+            setTimeout(() => setAnimationStep(1), 500),  // Show first number
+            setTimeout(() => setAnimationStep(2), 2000), // Show second number
+            setTimeout(() => setAnimationStep(3), 3500), // Show carry numbers
+            setTimeout(() => setAnimationStep(4), 5000)  // Show result
+        ];
+        
+        return () => timers.forEach(timer => clearTimeout(timer));
+    }, []);
 
-        < div className="grid-container" style={{
+    // Helper function to determine if a cell should be visible
+    const isCellVisible = (rowIndex, colIndex) => {
+        if (rowIndex === 0) return animationStep >= 3; // Carry numbers
+        if (rowIndex === 1) return animationStep >= 1; // First number
+        if (rowIndex === 2) return animationStep >= 2; // Second number
+        if (rowIndex === 3) return animationStep >= 3; // Divider
+        if (rowIndex === 4) return animationStep >= 4; // Result
+        return true; // Headers always visible
+    };
+
+    return (
+        <div className="grid-container" style={{
             '--num-cols': totalCols
-        }
-        }>
+        }}>
             {/* Top row: first cell is empty, then abbreviations */}
-            < div className="grid-cell empty-abbreviation-cell" ></div >
-            {
-                abbreviations.map((abbr, index) => (
-                    <div key={`abbr-${index}`} className="grid-cell abbreviation-cell">
-                        {abbr}
-                    </div>
-                ))
-            }
+            <motion.div 
+                className="grid-cell empty-abbreviation-cell"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+            ></motion.div>
+            {abbreviations.map((abbr, index) => (
+                <motion.div 
+                    key={`abbr-${index}`} 
+                    className="grid-cell abbreviation-cell"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                    {abbr}
+                </motion.div>
+            ))}
 
             {/* --- Render the grid rows with data from gridData --- */}
-            {
-                gridData.map((row, rowIndex) => (
-                    <React.Fragment key={rowIndex}>
-                        {row.map((cell, colIndex) => (
-                            <div
-                                key={`row-${rowIndex}-col-${colIndex}`}
-                                className={`grid-cell 
-                          ${rowIndex === 3 ? 'divider-row' : ''}
-                          ${rowIndex === 0 ? 'carry-borrow-cell' : ''}
-                          ${rowIndex === 4 ? 'result-cell' : ''}
-                          `}>
-                                {/* Note: The divider row is handled by a special CSS class */}
-                                {rowIndex !== 3 && cell}
-                            </div>
-                        ))}
-                    </React.Fragment>
-                ))
-            }
-        </div >
+            {gridData.map((row, rowIndex) => (
+                <React.Fragment key={rowIndex}>
+                    {row.map((cell, colIndex) => (
+                        <motion.div
+                            key={`row-${rowIndex}-col-${colIndex}`}
+                            className={`grid-cell 
+                                ${rowIndex === 3 ? 'divider-row' : ''}
+                                ${rowIndex === 0 ? 'carry-borrow-cell' : ''}
+                                ${rowIndex === 4 ? 'result-cell' : ''}
+                            `}
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            animate={{ 
+                                opacity: isCellVisible(rowIndex, colIndex) ? 1 : 0,
+                                scale: isCellVisible(rowIndex, colIndex) ? 1 : 0.5
+                            }}
+                            transition={{ 
+                                duration: 0.3,
+                                delay: colIndex * 0.1 // Digits appear from left to right
+                            }}
+                        >
+                            {rowIndex !== 3 && cell}
+                        </motion.div>
+                    ))}
+                </React.Fragment>
+            ))}
+        </div>
     );
 };
 

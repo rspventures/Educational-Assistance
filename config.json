@@ -2,5 +2,5 @@
   "frontendPort": 3000,
   "backendPort": 4000,
   "activesessiontimeout": 2,
-  "OPENAI_API_KEY": "sk-JUJ4cUjrEM-b9hqH2dM-myy1eSmEvRXmv6a49fAo0mF58BEigR5x5dLrHTTjD4HYyxo4Q747-9T3BlbkFJ1nZhpUSiOqOqpnsCZIonb8LVkjFThb4sBGIiLHG0WASn6yig3PzDEUGKVCVtI1lLDK0pp8g_kA"
+  "OPENAI_API_KEY": ""
 }

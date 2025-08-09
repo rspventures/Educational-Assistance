@@ -32,7 +32,7 @@ const subjectsIcons = {
 
 function SubjectsComponent() {
   // ######################################################
-  
+
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [dialogResult, setDialogResult] = useState('');
 
@@ -53,9 +53,15 @@ function SubjectsComponent() {
 
   const handleCloseSelectedTopic = () => {
     setShowAgent(false);
-    setShowSubjects(true);
+    setShowSubjects(false);
+    setShowTopicsModal(true);
   };
 
+  const handleCloseSelectedSubject = () => {
+    setShowAgent(false);
+    showTopicsModal(false);
+    setShowSubjects(true);
+  };
 
   // #######################################################
   // Access user and loading from AuthContext
@@ -169,16 +175,16 @@ function SubjectsComponent() {
 
     const fetchSubjects = async () => {
       if (subjectsLoading) return; // Prevent concurrent requests
-      
+
       setSubjectsLoading(true);
       setSubjectsError('');
-      
+
       try {
         console.log('Fetching subjects for:', {
           board: user.boardName,
           grade: user.studentGrade
         });
-        
+
         const response = await axios.get(`${API_BASE_URL}/subjects`, {
           params: {
             board: user.boardName,
@@ -186,7 +192,7 @@ function SubjectsComponent() {
           },
           cancelToken: source.token
         });
-        
+
         if (response.data && response.data.subjects) {
           console.log('Subjects returned:', response.data.subjects);
           setSubjects(response.data.subjects);
@@ -200,12 +206,12 @@ function SubjectsComponent() {
           console.log('Request cancelled:', error.message);
           return; // Don't set error state for cancelled requests
         }
-        
+
         console.error('Error fetching subjects:', error);
         // Only set error if subjects haven't been loaded successfully
         if (!subjects || Object.keys(subjects).length === 0) {
           setSubjects(null);
-          setSubjectsError('Failed to fetch subjects');
+          setSubjectsError('Failed to load Subjects. Maybe your session expired?');
         }
       } finally {
         setSubjectsLoading(false);
@@ -280,7 +286,7 @@ function SubjectsComponent() {
   };
 
   return (
-    <div className="subjects scrollable-results" ref={messagesRef}>
+    <div className="subjects scrollable-results" >
       {/* Routes for the application */}
       {characters.map((char, idx) => (
         <motion.span
@@ -308,8 +314,11 @@ function SubjectsComponent() {
 
       {/* ---- Display subjects loading until it pulls subject from backend.. ----*/}
       {subjectsLoading && <div>Loading subjects...</div>}
-      {(subjectsError && (!subjects || Object.keys(subjects).length === 0)) && 
-        <div style={{ color: 'red' }}>{subjectsError}</div>}
+
+      {(subjectsError && (!subjects || Object.keys(subjects).length === 0)) &&
+        <div className="error-message" style={{ color: 'red' }}>{subjectsError}</div>}
+
+
       {(showSubjects && subjects) && (<div className="subjects-header">
         <motion.h1
           initial={{ scale: 0.8 }}

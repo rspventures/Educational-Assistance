@@ -17,6 +17,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.result-cell {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.carry-borrow-cell {
+  color: #FF6B6B;
+  font-size: 0.8em;
+}
+
+.divider-row {
+  border-bottom: 2px solid white;
 }
 
 /* Style for the abbreviation cells in the top row */

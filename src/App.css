@@ -37,7 +37,7 @@ code {
 
 /* Application Container Root */
 .root {
-    height: 100vh;
+  height: 100vh;
 }
 
 .app-container {
@@ -139,7 +139,7 @@ code {
 
 .header-controls {
   font-size: 1rem;
-  
+
   display: flex;
   /* Add flex display */
   flex-direction: row;
@@ -148,7 +148,7 @@ code {
   /* Align links vertically at middle */
   justify-content: center;
   /* Center links horizontally */
-  
+
   /* Add space between links */
 }
 
@@ -187,7 +187,7 @@ code {
   padding-top: 5px;
 }
 
-.app-contents-inner {
+.app-contents-inner-old {
   width: 86vw;
   height: 86vh;
   margin: 10px auto;
@@ -201,6 +201,25 @@ code {
   border: 5px solid rgba(255, 255, 255, 0.1);
   align-items: center;
   border-radius: 20px;
+}
+
+.app-contents-inner-new {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  /* rounded-3xl */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  /* shadow-xl */
+  padding: 2.5rem;
+  /* p-10 */
+  width: 100%;
+  max-width: 960px;
+  /* max-w-4xl */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  /* For slide transitions */
 }
 
 /* ----------| Application Footer Start |--------------- */

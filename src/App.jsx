@@ -244,9 +244,9 @@ function AppContent() {
       </div>
 
       {/* Main content area */}
-      {/* Main content switches here */}
+      {/* Main content switches here  ref={messagesRef} add this to float character in app-contents-inner division */}
       <div className="app-contents">
-        <div className="app-contents-inner" ref={messagesRef}>
+        <div className="app-contents-inner" >
           {/* Routes for the application */}
           {characters.map((char, idx) => (
             <motion.span
